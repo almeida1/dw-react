@@ -16,12 +16,12 @@ export default function Adiciona() {
   return (
     <div>
       <h1>
-        Contador: <h3 data-testid="contador">{contador}</h3>
+        {/* define um rotulo para identificar a variavel que deve ser validada */}
+        Contador: <div><h5 data-testid="contador">{contador}</h5></div>
       </h1>
       <div>
         <button name="incremento" onClick={increment}>
-          {" "}
-          Incremento{" "}
+              Incremento
         </button>
         <button onClick={decrement}> Decremento </button>
         <button onClick={restart}> Reset </button>
