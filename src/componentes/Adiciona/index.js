@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./styles.css"
 
 export default function Adiciona() {
   const valorInicial = 0;
@@ -20,11 +21,11 @@ export default function Adiciona() {
         Contador: <div><h5 data-testid="contador">{contador}</h5></div>
       </h1>
       <div>
-        <button name="incremento" onClick={increment}>
+        <button className = "button" name="incremento" onClick={increment}>
               Incremento
         </button>
-        <button onClick={decrement}> Decremento </button>
-        <button onClick={restart}> Reset </button>
+        <button className = "button" onClick={decrement}> Decremento </button>
+        <button className = "button" onClick={restart}> Reset </button>
       </div>
     </div>
   );
